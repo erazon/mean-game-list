@@ -1,0 +1,35 @@
+Add new game <br />
+<!--Reactive form-->
+<form [formGroup]="gameForm" (ngSubmit)="onSubmit()">
+    <div>
+        <label>Title:</label>
+        <input formControlName="title" placeholder="Title"/>
+    </div>
+    <div>
+        <label>Year:</label>
+        <input formControlName="year" placeholder="Year"/>
+    </div>
+    <div>
+        <label>Rating:</label>
+        <input formControlName="rate" placeholder="Rating (1-5)"/>
+    </div>
+    <div>
+        <label>Price:</label>
+        <input formControlName="price" placeholder="Price"/>
+    </div>
+    <div>
+        <label>Min Players:</label>
+        <input formControlName="minPlayers" placeholder="Min Players (1-11)"/>
+    </div>
+    <div>
+        <label>Max Players:</label>
+        <input formControlName="maxPlayers" placeholder="Max Players (1-11)"/>
+    </div>
+    <div>
+        <label>Min Age:</label>
+        <input formControlName="minAge" placeholder="Min Age (6-99)"/>
+    </div>
+    <div>
+        <button type="submit" >Submit</button>
+    </div>
+</form>
